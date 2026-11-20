@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Book Back Cover Design</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Georgia, serif;
+            background: #e8dfd0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .book-cover {
+            width: 650px;
+            max-width: 100%;
+            background: #183b35;
+            color: #fff8e8;
+            padding: 40px;
+            border: 8px solid #c49a52;
+            box-shadow: 0 10px 25px
+                        rgba(0, 0, 0, 0.35);
+        }
+
+        .top-image {
+            width: 100%;
+            height: 210px;
+            object-fit: cover;
+            border: 3px solid #c49a52;
+            margin-bottom: 25px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #e7bd70;
+            font-size: 32px;
+            margin-bottom: 20px;
+            letter-spacing: 2px;
+        }
+
+        .description {
+            font-size: 17px;
+            line-height: 1.8;
+            text-align: justify;
+            margin-bottom: 25px;
+        }
+
+        .quote {
+            text-align: center;
+            font-style: italic;
+            color: #e7bd70;
+            font-size: 19px;
+            margin: 25px 0;
+            padding: 15px;
+            border-top: 1px solid #c49a52;
+            border-bottom: 1px solid #c49a52;
+        }
+
+        h2 {
+            color: #e7bd70;
+            font-size: 21px;
+            margin-bottom: 10px;
+        }
+
+        .author {
+            font-size: 16px;
+            line-height: 1.7;
+            margin-bottom: 25px;
+        }
+
+        .bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
+            border-top: 1px solid #c49a52;
+            padding-top: 20px;
+        }
+
+        .publisher {
+            font-size: 14px;
+            color: #e7bd70;
+        }
+
+        .barcode {
+            background: white;
+            color: black;
+            padding: 12px;
+            font-family: monospace;
+            font-size: 18px;
+            letter-spacing: 2px;
+        }
+        .author-section {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .author-photo {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #c49a52;
+            margin-bottom: 15px;
+}
+
+.author {
+    font-size: 16px;
+    line-height: 1.7;
+    text-align: justify;
+}
+
+        @media (max-width: 500px) {
+            .book-cover {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 25px;
+            }
+
+            .description {
+                font-size: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="book-cover">
+
+        <img src="/static/templates/images/book.jpg"
+             alt="Beautiful nature and book"
+             class="top-image">
+
+        <h1>THE POWER OF DREAMS</h1>
+
+        <p class="description">
+            Every great journey begins with a dream.
+            Life is full of opportunities, challenges
+            and unexpected adventures. This book
+            inspires readers to believe in themselves,
+            overcome difficulties and achieve their
+            goals.
+
+            Discover the importance of courage,
+            confidence, hard work and determination.
+            Let every page motivate you to create a
+            better future and make your dreams come true.
+        </p>
+
+        <div class="quote">
+            "Believe in your dreams and make them happen."
+        </div>
+
+        <h2>ABOUT THE AUTHOR</h2>
+        <div class="author-section">
+            <img src="/static/templates/images/author.jpg"
+            alt="Author Photo"
+            class="author-photo">
+
+
+        <p class="author">
+            The author is passionate about inspiring
+            people through meaningful stories and
+            positive thoughts. Through this book,
+            readers are encouraged to follow their
+            dreams and never give up on their goals.
+        </p>
+
+        <div class="bottom">
+
+            <div class="publisher">
+                <strong>STAR PUBLICATIONS</strong>
+                <p>Inspiring Every Reader</p>
+            </div>
+
+            <div class="barcode">
+                ||| || ||| |||
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
